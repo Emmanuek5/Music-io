@@ -68,6 +68,7 @@ button:hover {
     background-color: #17202A;
     padding: 20px;
     border-radius: 5px;
+    
 }
 
 /* ... (Previous CSS styles) ... */
@@ -163,7 +164,6 @@ button:hover {
 
 .song {
     display: flex;
-    align-items: center;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
