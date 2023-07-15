@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music.io</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Welcome to the Music Search App</h1>
+      <p>
+        Search for your favorite songs and artists to find their previews and
+        albums.
+      </p>
+      <form id="search-form">
+        <input
+          type="text"
+          id="search-input"
+          name="song_name"
+          placeholder="Enter song or artist name"
+        />
+        <button type="submit">Search</button>
+      </form>
+      <div id="song_div">
+        <!-- Default content with buttons -->
+        <h2>Search for your favorite songs and artists</h2>
+        <p>Enter a song or artist name above to find previews and albums.</p>
+        <div class="button-container">
+          <a href="#" class="spotify-button">
+            <i class="fab fa-spotify"></i> Listen on Spotify
+          </a>
+          <a href="#" class="apple-music-button">
+            <i class="fab fa-apple"></i> Listen on Apple Music
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="made-by">
+      <a href="#">Made by Blue Obsidian</a>
+    </div>
+
+    <script src="js/util.js"></script>
+  </body>
+</html>
