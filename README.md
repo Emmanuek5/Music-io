@@ -40,20 +40,25 @@ To run the app locally, follow these simple steps:
 
 Clone this GitHub repository to your local machine.
 Navigate to the project directory.
-Run `npm install && npm start`
-How to Run
+
+#### Run `npm install && npm start`
+
 After opening the app in your browser, you will see a search bar on the homepage.
 Enter the name of the song or artist you want to search for.
 Click the "Search" button or press Enter to perform the search.
 The app will display a list of matching results.
 Click on the Spotify or Apple Music buttons to listen to the full tracks on your preferred platform.
-Contributing
+
+## Contributing
+
 We welcome contributions to enhance the Music.io app. If you discover any issues or have ideas for new features, please feel free to open a pull request.
 
-License
+## License
+
 This project is licensed under the MIT License.
 
-Contact
+## Contact
+
 For any questions or inquiries, please feel free to contact us at contact@music.io.
 
 Please make sure to update the demo link and contact information to match your actual project details. If you have any additional details you want to include in the README, feel free to add them! Good luck with your Music.io project on GitHub!
