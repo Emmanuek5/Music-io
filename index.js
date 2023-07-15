@@ -21,6 +21,10 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/docs/", (req, res) => {
+  res.render("docs/index");
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
