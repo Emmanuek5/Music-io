@@ -23,10 +23,10 @@ function handleSubmit(e) {
             <h2>No results found</h2>
             <p>Try searching for a song or artist.</p>
             <div>
-                <a href="#" class="spotify-button">
+                <a href="https://open.spotify.com" class="spotify-button">
                     <i class="fab fa-spotify"></i> Listen on Spotify
                 </a>
-                <a href="#" class="apple-music-button">
+                <a href="https://music.apple.com/" class="apple-music-button">
                     <i class="fab fa-apple"></i> Listen on Apple Music
                 </a>
             </div>
