@@ -3,236 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title style="color: black">Music Search Website Documentation</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        color: black;
-        background-color: white;
-      }
-
-      h1 {
-        margin-top: 0;
-        color: green;
-      }
-
-      h2 {
-        margin-bottom: 0;
-        color: black;
-      }
-
-      a {
-        color: #007bff;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      section {
-        padding: 20px;
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      pre {
-        background-color: #f8f9fa;
-        padding: 10px;
-        border-radius: 5px;
-      }
-
-      code {
-        font-family: "Courier New", Courier, monospace;
-      }
-
-      hr {
-        margin: 20px 0;
-        border: none;
-        border-top: 1px solid #ddd;
-      }
-
-      .screenshot {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-      }
-    </style>
+    <link rel="stylesheet" href="/css/docs.css" />
+    <title>Music Search Website Documentation</title>
   </head>
 
   <body>
     <section>
       <h1>Music Search Website Documentation</h1>
-      <h2>Table of Contents</h2>
-      <ol>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#features">Features</a></li>
-        <li>
-          <a href="#getting-started">Getting Started</a>
-          <ul>
-            <li><a href="#prerequisites">Prerequisites</a></li>
-            <li><a href="#installation">Installation</a></li>
-          </ul>
-        </li>
-        <li><a href="#project-structure">Project Structure</a></li>
-        <li><a href="#technologies-used">Technologies Used</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#responsive-design">Responsive Design</a></li>
-        <li><a href="#meta-tag">Meta Tag</a></li>
-        <li><a href="#images">Images</a></li>
-      </ol>
-
-      <hr />
-
-      <h2 id="introduction">1. Introduction</h2>
       <p>
-        The Music Search Website is a web application that allows users to
-        search for songs and artists and get music preview links from Spotify
-        and Apple Music. Users can search for their favorite songs and discover
-        new music through this website.
+        Welcome to the Music Search Website Documentation! This page provides
+        detailed information on how to use our website to search for songs,
+        artists, and albums, and listen to music previews. Whether you're a
+        music enthusiast or just looking for your favorite tunes, our website
+        has you covered.
       </p>
 
-      <h2 id="features">2. Features</h2>
-      <ul>
-        <li>Search for songs and artists.</li>
-        <li>Get preview links for songs on Spotify and Apple Music.</li>
-        <li>Responsive design for mobile and desktop devices.</li>
-        <li>Attractive user interface.</li>
-        <li>Error handling for invalid searches.</li>
-      </ul>
-
-      <h2 id="getting-started">3. Getting Started</h2>
-      <h3 id="prerequisites">Prerequisites</h3>
-      <p>To run this project locally, you will need the following:</p>
-      <ul>
-        <li>
-          Node.js and npm (Node Package Manager) installed on your machine.
-        </li>
-      </ul>
-
-      <h3 id="installation">Installation</h3>
-      <ol>
-        <li>Clone the repository:</li>
-      </ol>
-      <pre><code style="color: black;">git clone https://github.com/your-username/music-search-website.git</code></pre>
-      <ol start="2">
-        <li>Navigate to the project directory:</li>
-      </ol>
-      <pre><code style="color: black;">cd music-search-website</code></pre>
-      <ol start="3">
-        <li>Install the required dependencies:</li>
-      </ol>
-      <pre><code style="color: black;">npm install</code></pre>
-      <ol start="4">
-        <li>Start the development server:</li>
-      </ol>
-      <pre><code style="color: black;">npm start</code></pre>
-
-      <h2 id="project-structure">4. Project Structure</h2>
-      <pre><code style="color: black;">
-music-search-website/
-  ├
-  ├── src/
-  │   ├── server.js
-  │   └── client.js
-  ├── views/
-  │   └── index.ejs
-  ├── styles/
-  │   └── style.css
-  └── data/
-      └── songs.json
-        </code></pre>
-      <ul>
-        <li>
-          <code>public/</code>: Contains static files like HTML and CSS used for
-          the website.
-        </li>
-        <li>
-          <code>src/</code>: Contains server and client-side JavaScript files.
-        </li>
-        <li>
-          <code>views/</code>: Contains the EJS template for the main webpage.
-        </li>
-        <li><code>styles/</code>: Contains custom styles for the website.</li>
-        <li><code>data/</code>: Contains the JSON file with song data.</li>
-      </ul>
-
-      <h2 id="technologies-used">5. Technologies Used</h2>
-      <p>The Music Search Website is built using the following technologies:</p>
-      <ul>
-        <li>
-          Front-end:
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript (Vanilla JS)</li>
-            <li>EJS (Embedded JavaScript) for templating</li>
-          </ul>
-        </li>
-        <li>
-          Back-end:
-          <ul>
-            <li>Node.js</li>
-            <li>Express.js for handling server requests</li>
-          </ul>
-        </li>
-      </ul>
-
-      <h2 id="usage">6. Usage</h2>
-      <ol>
-        <li>Open the website using your preferred web browser.</li>
-        <li>
-          Enter the name of a song or artist in the search bar and click the
-          "Search" button.
-        </li>
-        <li>
-          The website will display a list of search results containing song
-          details, including the song name, artist name, album name, and preview
-          links for Spotify and Apple Music.
-        </li>
-        <li>
-          If no results are found, an appropriate message will be displayed.
-        </li>
-        <li>
-          You can listen to a preview of the song by using the audio player
-          embedded in the search results.
-        </li>
-      </ol>
-
-      <h2 id="responsive-design">7. Responsive Design</h2>
+      <h2>Getting Started</h2>
       <p>
-        The Music Search Website is designed to be responsive, ensuring a
-        seamless user experience on both mobile and desktop devices. The
-        website's layout and design will adapt to different screen sizes,
-        providing optimal viewing and interaction on any device size.
+        To get started, simply use the search bar on the homepage to enter the
+        name of a song or artist you want to find. Then click on the "Search"
+        button or hit "Enter" on your keyboard. Our website will fetch the
+        relevant music data from our API and display the search results on the
+        same page.
       </p>
 
-      <h2 id="meta-tag">8. Meta Tag</h2>
-      <pre><code>&lt;meta name="description" content="The Music Search Website allows users to search for songs and
-            artists and get music preview links from Spotify and Apple Music."&gt;</code></pre>
+      <h2>Search Results</h2>
+      <p>
+        Once you perform a search, the results will be displayed below the
+        search bar. Each result will include the song name, artist name, album
+        name, and a cover image. Additionally, a music player will be provided
+        that allows you to listen to a preview of the song.
+      </p>
 
-      <h2 id="images">9. Images</h2>
-      <p>Below are some screenshots of the Music Search Website:</p>
-      <!-- Add screenshot images here -->
-      <img
-        class="screenshot"
-        src="/images/screenshot-1.png"
-        alt="Screenshot 1"
-      />
-      <img
-        class="screenshot"
-        src="/images/screenshot-2.png"
-        alt="Screenshot 2"
-      />
-      <img
-        class="screenshot"
-        src="/images/screenshot-3.png"
-        alt="Screenshot 3"
-      />
+      <h2>Listening to Music Previews</h2>
+      <p>
+        To listen to a music preview, click on the play button on the music
+        player. You can control the playback using the play/pause button and the
+        volume slider. If you want to stop the preview, click the stop button or
+        pause the preview.
+      </p>
+
+      <h2>External Music Platforms</h2>
+      <p>
+        If you find a song you like, you can also listen to it on external music
+        platforms like Spotify and Apple Music. Each search result provides
+        buttons to directly listen to the song on these platforms. Clicking on
+        the respective buttons will redirect you to the song's page on the
+        corresponding platform.
+      </p>
+
+      <h2>API Usage</h2>
+      <p>
+        If you are a developer and interested in using our API to access music
+        data, you can do so by sending a GET request to the following endpoint:
+      </p>
+      <pre><code>GET /api/v1/search/:name</code></pre>
+      <p>
+        Replace <code>:name</code> with the song or artist name you want to
+        search for. The API will respond with an array of songs matching the
+        search query, each containing information like the track name, artist
+        name, album name, cover URL, and music preview URL.
+      </p>
+
+      <h2>Support</h2>
+      <p>
+        For any questions or assistance, please don't hesitate to contact our
+        support team. Happy music searching!
+      </p>
     </section>
   </body>
 </html>
