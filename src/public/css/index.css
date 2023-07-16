@@ -15,6 +15,7 @@ button {
 body {
     font-family: Arial, sans-serif;
     background-color: #2E8B57;
+    /* Green background */
     color: white;
 }
 
@@ -65,68 +66,13 @@ button:hover {
 }
 
 #song_div {
-    background-color: #17202A;
+    background-color: #111;
+    /* Shade of black */
     padding: 20px;
     border-radius: 5px;
-    
 }
 
 /* ... (Previous CSS styles) ... */
-
-/* Styling for the buttons */
-.button-container {
-    margin-top: 20px;
-}
-
-.spotify-button,
-.apple-music-button,
-.made-by-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.spotify-button {
-    background-color: #1DB954;
-}
-
-.apple-music-button {
-    background-color: #B22222;
-}
-
-.spotify-button:hover,
-.apple-music-button:hover,
-.made-by-button:hover {
-    background-color: #090;
-}
-
-/* Styling for the "Made by" link */
-.made-by {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: #1E2831;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 12px;
-}
-
-.made-by a {
-    color: white;
-    text-decoration: none;
-}
-
-.made-by a:hover {
-    text-decoration: underline;
-}
-
-/* ... (existing styles) ... */
 
 /* Additional styles for the song_div */
 #song_div h2 {
@@ -156,6 +102,10 @@ button:hover {
     color: #ccc;
     font-size: 14px;
 }
+
+/* ... (existing styles) ... */
+
+/* Additional styles for the song_div */
 #song_div {
     background-color: #17202a;
     padding: 20px;
@@ -199,137 +149,7 @@ button:hover {
     outline: none;
 }
 
-.song audio::-webkit-media-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.song audio::-webkit-media-controls-play-button,
-.song audio::-webkit-media-controls-mute-button {
-    font-size: 16px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
-}
-
-.song audio::-webkit-media-controls-play-button::before {
-    content: "\25B6";
-    /* Play button icon (Unicode character for "►") */
-}
-
-.song audio::-webkit-media-controls-play-button[aria-label="Pause"]::before {
-    content: "\23F8";
-    /* Pause button icon (Unicode character for "⏸") */
-}
-
-.song audio::-webkit-media-controls-mute-button::before {
-    content: "\1F50A";
-    /* Mute button icon (Unicode character for "🔊") */
-}
-
-.song audio::-webkit-media-controls-mute-button[aria-label="Unmute"]::before {
-    content: "\1F507";
-    /* Unmute button icon (Unicode character for "🔇") */
-}
-
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display,
-.song audio::-webkit-media-controls-volume-slider-container {
-    display: flex;
-    align-items: center;
-}
-
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display {
-    margin: 0 5px;
-    font-size: 12px;
-}
-
-.song audio::-webkit-media-controls-volume-slider {
-    margin: 0 5px;
-    width: 60px;
-    background-color: #fff;
-    /* Set the background color of the volume slider to white */
-}
-
-.song audio::-webkit-media-controls-volume-slider-thumb {
-    width: 12px;
-    height: 12px;
-    font-size: 8px;
-    line-height: 1;
-}
-
-.song audio::-webkit-media-controls-timeline {
-    background-color: rgba(255, 255, 255, 0.3);
-    /* Progress bar background color (white with opacity) */
-    border-radius: 2.5px;
-}
-
-.song audio::-webkit-media-controls-timeline-thumb {
-    background-color: #fff;
-    /* Progress bar thumb color (white) */
-}
-
-.song a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.song .spotify-button {
-    background-color: #1DB954;
-}
-
-.song .apple-music-button {
-    background-color: #B22222;
-}
-
-.song i {
-    margin-right: 5px;
-}
-
-.button-container {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.spotify-button,
-.apple-music-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.spotify-button {
-    background-color: #1db954;
-}
-
-.apple-music-button {
-    background-color: #ff3b30;
-}
-
-.spotify-button:hover,
-.apple-music-button:hover {
-    background-color: #222;
-}
-
-song audio::-webkit-media-controls,
+.song audio::-webkit-media-controls,
 .song audio::-webkit-media-controls-panel,
 .song audio::-webkit-media-controls-overlay-play-button,
 .song audio::-webkit-media-controls-enclosure,
@@ -446,820 +266,203 @@ song audio::-webkit-media-controls,
     background-color: #2E8B57;
     /* Hover color for progress bar thumb (green) */
 }
+/* ... (previous CSS styles) ... */
 
-/* Styling for time display and volume slider */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display,
-.song audio::-webkit-media-controls-volume-slider {
-    height: 10px;
-    line-height: 10px;
-    padding: 0 4px;
+/* Styling for the buttons */
+.button-container {
+    margin-top: 20px;
 }
 
-/* Styling for mute button */
-.song audio::-webkit-media-controls-mute-button {
-    padding: 4px;
-}
-
-/* Styling for audio controls container */
-.song audio::-webkit-media-controls-panel {
-    display: flex;
-    align-items: center;
-}
-
-/* Styling for audio controls container in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-panel {
-    flex-direction: column;
-}
-
-/* Styling for audio controls buttons */
-.song audio::-webkit-media-controls-play-button,
-.song audio::-webkit-media-controls-mute-button {
+.spotify-button,
+.apple-music-button,
+.made-by-button {
+    display: inline-block;
+    padding: 10px 20px;
     font-size: 16px;
-}
-
-/* Styling for audio time display and volume */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display,
-.song audio::-webkit-media-controls-volume-slider {
     color: white;
-    /* Time display and volume slider color (white) */
-}
-
-/* Styling for audio controls container in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-overlay-play-button {
-    display: none;
-    /* Hide overlay play button in fullscreen mode */
-}
-
-/* Styling for fullscreen button */
-.song audio::-webkit-media-controls-fullscreen-button {
-    display: none;
-    /* Hide fullscreen button */
-}
-
-/* Styling for the audio controls container when audio is not playing */
-.song audio::-webkit-media-controls-start-playback-button {
-    display: none;
-    /* Hide play button when audio is not playing */
-}
-
-/* Reset some default styles */
-/* ... (Previous styles) ... */
-
-/* Audio player controls styling */
-.song audio::-webkit-media-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Styling for audio controls buttons */
-.song audio::-webkit-media-controls-play-button,
-.song audio::-webkit-media-controls-mute-button {
-    font-size: 16px;
-    background-color: transparent;
-    border: none;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
     cursor: pointer;
-    padding: 4px;
+    transition: background-color 0.3s;
 }
 
-/* Styling for the play button */
-.song audio::-webkit-media-controls-play-button::before {
-    content: "▶";
-    /* Play button icon */
+.spotify-button {
+    background-color: #1DB954;
+    /* Spotify green */
 }
 
-/* Styling for the pause button */
-.song audio::-webkit-media-controls-play-button[aria-label="Pause"]::before {
-    content: "⏸";
-    /* Pause button icon */
+.apple-music-button {
+    background-color: #B22222;
+    /* Apple Music red */
 }
 
-/* Styling for the mute button */
-.song audio::-webkit-media-controls-mute-button::before {
-    content: "🔊";
-    /* Mute button icon */
+.made-by-button {
+    background-color: #444;
+    /* Custom background color for "Made by" button */
 }
 
-/* Styling for the unmute button */
-.song audio::-webkit-media-controls-mute-button[aria-label="Unmute"]::before {
-    content: "🔇";
-    /* Unmute button icon */
+.spotify-button:hover,
+.apple-music-button:hover,
+.made-by-button:hover {
+    background-color: #222;
+    /* Darker color on hover */
 }
 
-/* Styling for the audio time display and volume slider container */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display,
-.song audio::-webkit-media-controls-volume-slider-container {
-    display: flex;
-    align-items: center;
-}
-
-/* Styling for the audio time display */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display {
-    margin: 0 5px;
+/* Styling for the "Made by" link */
+.made-by {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #1E2831;
+    /* Custom background color for the "Made by" link */
+    padding: 5px;
+    border-radius: 5px;
     font-size: 12px;
 }
 
-/* Styling for the volume slider */
-.song audio::-webkit-media-controls-volume-slider {
-    margin: 0 5px;
-    width: 60px;
-}
-
-/* Styling for the volume slider thumb */
-.song audio::-webkit-media-controls-volume-slider-thumb {
-    width: 12px;
-    height: 12px;
-    font-size: 8px;
-    line-height: 1;
-}
-
-/* Styling for the audio time display and volume slider in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-current-time-display,
-.song audio:-webkit-full-screen::-webkit-media-controls-time-remaining-display,
-.song audio:-webkit-full-screen::-webkit-media-controls-volume-slider-container {
-    display: none;
-    /* Hide time display and volume slider in fullscreen mode */
-}
-
-/* Styling for the audio controls panel in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-panel {
-    flex-direction: row;
-    /* Display controls horizontally in fullscreen mode */
-}
-
-/* Styling for the audio controls buttons in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-play-button,
-.song audio:-webkit-full-screen::-webkit-media-controls-mute-button {
-    font-size: 20px;
-    /* Increase button size in fullscreen mode */
-}
-
-/* Styling for the audio controls container when audio is not playing */
-.song audio::-webkit-media-controls-start-playback-button {
-    display: none;
-    /* Hide play button when audio is not playing */
-}
-
-/* Reset some default styles */
-/* ... (Previous styles) ... */
-
-/* Audio player controls styling */
-.song audio::-webkit-media-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Styling for audio controls buttons */
-.song audio::-webkit-media-controls-play-button,
-.song audio::-webkit-media-controls-mute-button {
-    font-size: 16px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
-}
-
-/* Styling for the play button */
-.song audio::-webkit-media-controls-play-button::before {
-    content: "\25B6";
-    /* Play button icon (Unicode character for "►") */
-}
-
-/* Styling for the pause button */
-.song audio::-webkit-media-controls-play-button[aria-label="Pause"]::before {
-    content: "\23F8";
-    /* Pause button icon (Unicode character for "⏸") */
-}
-
-/* Styling for the mute button */
-.song audio::-webkit-media-controls-mute-button::before {
-    content: "\1F50A";
-    /* Mute button icon (Unicode character for "🔊") */
-}
-
-/* Styling for the unmute button */
-.song audio::-webkit-media-controls-mute-button[aria-label="Unmute"]::before {
-    content: "\1F507";
-    /* Unmute button icon (Unicode character for "🔇") */
-}
-
-/* Styling for the audio time display and volume slider container */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display,
-.song audio::-webkit-media-controls-volume-slider-container {
-    display: flex;
-    align-items: center;
-}
-
-/* Styling for the audio time display */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display {
-    margin: 0 5px;
-    font-size: 12px;
-}
-
-/* Styling for the volume slider */
-.song audio::-webkit-media-controls-volume-slider {
-    margin: 0 5px;
-    width: 60px;
-}
-
-/* Styling for the volume slider thumb */
-.song audio::-webkit-media-controls-volume-slider-thumb {
-    width: 12px;
-    height: 12px;
-    font-size: 8px;
-    line-height: 1;
-}
-
-/* Styling for the audio time display and volume slider in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-current-time-display,
-.song audio:-webkit-full-screen::-webkit-media-controls-time-remaining-display,
-.song audio:-webkit-full-screen::-webkit-media-controls-volume-slider-container {
-    display: none;
-    /* Hide time display and volume slider in fullscreen mode */
-}
-
-/* Styling for the audio controls panel in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-panel {
-    flex-direction: row;
-    /* Display controls horizontally in fullscreen mode */
-}
-
-/* Styling for the audio controls buttons in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-play-button,
-.song audio:-webkit-full-screen::-webkit-media-controls-mute-button {
-    font-size: 20px;
-    /* Increase button size in fullscreen mode */
-}
-
-/* Styling for the audio controls container when audio is not playing */
-.song audio::-webkit-media-controls-start-playback-button {
-    display: none;
-    /* Hide play button when audio is not playing */
-}
-
-/* Reset some default styles */
-/* ... (Previous styles) ... */
-
-/* Audio player controls styling */
-.song audio::-webkit-media-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Styling for audio controls buttons */
-.song audio::-webkit-media-controls-play-button,
-.song audio::-webkit-media-controls-mute-button {
-    font-size: 16px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
-}
-
-/* Styling for the play button */
-.song audio::-webkit-media-controls-play-button::before {
-    content: "\25B6";
-    /* Play button icon (Unicode character for "►") */
-}
-
-/* Styling for the pause button */
-.song audio::-webkit-media-controls-play-button[aria-label="Pause"]::before {
-    content: "\23F8";
-    /* Pause button icon (Unicode character for "⏸") */
-}
-
-/* Styling for the mute button */
-.song audio::-webkit-media-controls-mute-button::before {
-    content: "\1F50A";
-    /* Mute button icon (Unicode character for "🔊") */
-}
-
-/* Styling for the unmute button */
-.song audio::-webkit-media-controls-mute-button[aria-label="Unmute"]::before {
-    content: "\1F507";
-    /* Unmute button icon (Unicode character for "🔇") */
-}
-
-/* Styling for the audio time display and volume slider container */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display,
-.song audio::-webkit-media-controls-volume-slider-container {
-    display: flex;
-    align-items: center;
-}
-
-/* Styling for the audio time display */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display {
-    margin: 0 5px;
-    font-size: 12px;
-}
-
-/* Styling for the volume slider */
-.song audio::-webkit-media-controls-volume-slider {
-    margin: 0 5px;
-    width: 60px;
-    background-color: #fff;
-    /* Set the background color of the volume slider to white */
-}
-
-/* Styling for the volume slider thumb */
-.song audio::-webkit-media-controls-volume-slider-thumb {
-    width: 12px;
-    height: 12px;
-    font-size: 8px;
-    line-height: 1;
-}
-
-/* Styling for the audio time display and volume slider in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-current-time-display,
-.song audio:-webkit-full-screen::-webkit-media-controls-time-remaining-display,
-.song audio:-webkit-full-screen::-webkit-media-controls-volume-slider-container {
-    display: none;
-    /* Hide time display and volume slider in fullscreen mode */
-}
-
-/* Styling for the audio controls panel in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-panel {
-    flex-direction: row;
-    /* Display controls horizontally in fullscreen mode */
-}
-
-/* Styling for the audio controls buttons in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-play-button,
-.song audio:-webkit-full-screen::-webkit-media-controls-mute-button {
-    font-size: 20px;
-    /* Increase button size in fullscreen mode */
-}
-
-/* Styling for the audio controls container when audio is not playing */
-.song audio::-webkit-media-controls-start-playback-button {
-    display: none;
-    /* Hide play button when audio is not playing */
-}
-
-/* Reset some default styles */
-/* ... (Previous styles) ... */
-
-/* Audio player controls styling */
-.song audio::-webkit-media-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Styling for audio controls buttons */
-.song audio::-webkit-media-controls-play-button,
-.song audio::-webkit-media-controls-mute-button {
-    font-size: 16px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
-}
-
-/* Styling for the play button */
-.song audio::-webkit-media-controls-play-button::before {
-    content: "\25B6";
-    /* Play button icon (Unicode character for "►") */
-}
-
-/* Styling for the pause button */
-.song audio::-webkit-media-controls-play-button[aria-label="Pause"]::before {
-    content: "\23F8";
-    /* Pause button icon (Unicode character for "⏸") */
-}
-
-/* Styling for the mute button */
-.song audio::-webkit-media-controls-mute-button::before {
-    content: "\1F50A";
-    /* Mute button icon (Unicode character for "🔊") */
-}
-
-/* Styling for the unmute button */
-.song audio::-webkit-media-controls-mute-button[aria-label="Unmute"]::before {
-    content: "\1F507";
-    /* Unmute button icon (Unicode character for "🔇") */
-}
-
-/* Styling for the audio time display and volume slider container */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display,
-.song audio::-webkit-media-controls-volume-slider-container {
-    display: flex;
-    align-items: center;
-}
-
-/* Styling for the audio time display */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display {
-    margin: 0 5px;
-    font-size: 12px;
-}
-
-/* Styling for the volume slider */
-.song audio::-webkit-media-controls-volume-slider {
-    margin: 0 5px;
-    width: 60px;
-    background-color: #fff;
-    /* Set the background color of the volume slider to white */
-}
-
-/* Styling for the volume slider thumb */
-.song audio::-webkit-media-controls-volume-slider-thumb {
-    width: 12px;
-    height: 12px;
-    font-size: 8px;
-    line-height: 1;
-}
-
-/* Styling for the audio time display and volume slider in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-current-time-display,
-.song audio:-webkit-full-screen::-webkit-media-controls-time-remaining-display,
-.song audio:-webkit-full-screen::-webkit-media-controls-volume-slider-container {
-    display: none;
-    /* Hide time display and volume slider in fullscreen mode */
-}
-
-/* Styling for the audio controls panel in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-panel {
-    flex-direction: row;
-    /* Display controls horizontally in fullscreen mode */
-}
-
-/* Styling for the audio controls buttons in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-play-button,
-.song audio:-webkit-full-screen::-webkit-media-controls-mute-button {
-    font-size: 20px;
-    /* Increase button size in fullscreen mode */
-}
-
-/* Styling for the audio controls container when audio is not playing */
-.song audio::-webkit-media-controls-start-playback-button {
-    display: none;
-    /* Hide play button when audio is not playing */
-}
-
-/* Hover and active styles for buttons and sliders */
-.song audio::-webkit-media-controls-play-button:hover,
-.song audio::-webkit-media-controls-mute-button:hover,
-.song audio::-webkit-media-controls-timeline-thumb:hover,
-.song audio::-webkit-media-controls-volume-slider-thumb:hover,
-.song audio::-webkit-media-controls-timeline-thumb:active,
-.song audio::-webkit-media-controls-volume-slider-thumb:active {
-    background-color: #2E8B57;
-    /* Hover color for buttons and sliders (green) */
-}
-
-/* Styling for progress bar */
-.song audio::-webkit-media-controls-timeline {
-    background-color: rgba(255, 255, 255, 0.3);
-    /* Progress bar background color (white with opacity) */
-    border-radius: 2.5px;
-}
-
-/* Styling for progress bar thumb */
-.song audio::-webkit-media-controls-timeline-thumb {
-    background-color: #fff;
-    /* Progress bar thumb color (white) */
-}
-
-/* Styling for time display and volume slider */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display,
-.song audio::-webkit-media-controls-volume-slider {
-    height: 10px;
-    line-height: 10px;
-    padding: 0 4px;
+.made-by a {
     color: white;
-    /* Time display and volume slider color (white) */
+    text-decoration: none;
 }
 
-/* Styling for mute button */
-.song audio::-webkit-media-controls-mute-button {
-    padding: 4px;
+.made-by a:hover {
+    text-decoration: underline;
 }
 
-/* Styling for audio controls container */
-.song audio::-webkit-media-controls-panel {
+/* ... (existing styles) ... */
+
+/* Additional styles for the song_div */
+#song_div {
+    background-color: #17202a;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.song {
     display: flex;
-    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1e2831;
 }
 
-/* Styling for audio controls container in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-panel {
-    flex-direction: column;
+.song img {
+    max-width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
-/* Styling for the audio controls container when audio is not playing */
-.song audio::-webkit-media-controls-start-playback-button {
-    display: none;
-    /* Hide play button when audio is not playing */
+.song-details {
+    flex: 1;
 }
 
-/* Styling for the audio controls container in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-overlay-play-button {
-    display: none;
-    /* Hide overlay play button in fullscreen mode */
+.song h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
-/* Styling for fullscreen button */
-.song audio::-webkit-media-controls-fullscreen-button {
-    display: none;
-    /* Hide fullscreen button */
-}
-
-
-/* Styling for audio controls buttons */
-.song audio::-webkit-media-controls-play-button,
-.song audio::-webkit-media-controls-mute-button {
+.song p {
     font-size: 16px;
-    background-color: transparent;
+    margin: 5px 0;
+}
+
+.song audio {
+    width: 100%;
+    margin-top: 10px;
     border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: none;
+}
+
+/* ... (existing styles) ... */
+
+/* Additional styles for the Listen buttons */
+.song a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    padding: 4px;
+    transition: background-color 0.3s;
 }
 
-/* Styling for the play button */
-.song audio::-webkit-media-controls-play-button::before {
-    content: "\u25B6";
-    /* Play button icon (Unicode escape sequence for "►") */
+.song .spotify-button {
+    background-color: #1DB954;
+    /* Spotify green */
 }
 
-/* Styling for the pause button */
-.song audio::-webkit-media-controls-play-button[aria-label="Pause"]::before {
-    content: "\u23F8";
-    /* Pause button icon (Unicode escape sequence for "⏸") */
+.song .apple-music-button {
+    background-color: #B22222;
+    /* Apple Music red */
 }
 
-/* Styling for the mute button */
-.song audio::-webkit-media-controls-mute-button::before {
-    content: "\uD83D\uDD0A";
-    /* Mute button icon (Unicode escape sequence for "🔊") */
+.song .made-by-button {
+    background-color: #444;
+    /* Custom background color for "Made by" button */
 }
 
-/* Styling for the unmute button */
-.song audio::-webkit-media-controls-mute-button[aria-label="Unmute"]::before {
-    content: "\uD83D\uDD07";
-    /* Unmute button icon (Unicode escape sequence for "🔇") */
+.song i {
+    margin-right: 5px;
 }
 
-/* Styling for the audio time display and volume slider container */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display,
-.song audio::-webkit-media-controls-volume-slider-container {
+.button-container {
     display: flex;
-    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-/* Styling for the audio time display */
-.song audio::-webkit-media-controls-current-time-display,
-.song audio::-webkit-media-controls-time-remaining-display {
-    margin: 0 5px;
-    font-size: 12px;
+.spotify-button,
+.apple-music-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Styling for the volume slider */
-.song audio::-webkit-media-controls-volume-slider {
-    margin: 0 5px;
-    width: 60px;
-    background-color: #fff;
-    /* Set the background color of the volume slider to white */
+.spotify-button {
+    background-color: #1db954;
 }
 
-/* Styling for the volume slider thumb */
-.song audio::-webkit-media-controls-volume-slider-thumb {
-    width: 12px;
-    height: 12px;
-    font-size: 8px;
-    line-height: 1;
+.apple-music-button {
+    background-color: #ff3b30;
 }
 
-/* Styling for the audio time display and volume slider in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-current-time-display,
-.song audio:-webkit-full-screen::-webkit-media-controls-time-remaining-display,
-.song audio:-webkit-full-screen::-webkit-media-controls-volume-slider-container {
-    display: none;
-    /* Hide time display and volume slider in fullscreen mode */
+.spotify-button:hover,
+.apple-music-button:hover {
+    background-color: #222;
 }
 
-/* Styling for the audio controls panel in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-panel {
-    flex-direction: row;
-    /* Display controls horizontally in fullscreen mode */
+/* ... (existing styles) ... */
+
+/* Additional styles for the "Made by" button */
+.made-by-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #444;
+    /* Custom background color for "Made by" button */
 }
 
-/* Styling for the audio controls buttons in fullscreen mode */
-.song audio:-webkit-full-screen::-webkit-media-controls-play-button,
-.song audio:-webkit-full-screen::-webkit-media-controls-mute-button {
-    font-size: 20px;
-    /* Increase button size in fullscreen mode */
+.made-by-button:hover {
+    background-color: #222;
+    /* Darker color on hover */
 }
 
-/* Styling for the audio controls container when audio is not playing */
-.song audio::-webkit-media-controls-start-playback-button {
-    display: none;
-    /* Hide play button when audio is not playing */
-}
-
-/* Hover and active styles for buttons and sliders */
-.song audio::-webkit-media-controls-play-button:hover,
-.song audio::-webkit-media-controls-mute-button:hover,
-.song audio::-webkit-media-controls-timeline-thumb:hover,
-.song audio::-webkit-media-controls-volume-slider-thumb:hover,
-.song audio::-webkit-media-controls-timeline-thumb:active,
-.song audio::-webkit-media-controls-volume-slider-thumb:active {
-    background-color: #2E8B57;
-}
-
- @media screen and (max-width: 600px) {
-     .song {
-         width: 100%;
-     }
- }
-
- /* Reset some default styles */
- /* ... (Previous styles) ... */
-
- /* Audio player controls styling */
- .song audio::-webkit-media-controls {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
-
- /* Styling for audio controls buttons */
- .song audio::-webkit-media-controls-play-button,
- .song audio::-webkit-media-controls-mute-button {
-     font-size: 16px;
-     background-color: transparent;
-     border: none;
-     cursor: pointer;
-     padding: 4px;
- }
-
- /* Styling for the play button */
- .song audio::-webkit-media-controls-play-button::before {
-     content: "\u25B6";
-     /* Play button icon (Unicode escape sequence for "►") */
- }
-
- /* Styling for the pause button */
- .song audio::-webkit-media-controls-play-button[aria-label="Pause"]::before {
-     content: "\u23F8";
-     /* Pause button icon (Unicode escape sequence for "⏸") */
- }
-
- /* Styling for the mute button */
- .song audio::-webkit-media-controls-mute-button::before {
-     content: "\uD83D\uDD0A";
-     /* Mute button icon (Unicode escape sequence for "🔊") */
- }
-
- /* Styling for the unmute button */
- .song audio::-webkit-media-controls-mute-button[aria-label="Unmute"]::before {
-     content: "\uD83D\uDD07";
-     /* Unmute button icon (Unicode escape sequence for "🔇") */
- }
-
- /* Styling for the audio time display and volume slider container */
- .song audio::-webkit-media-controls-current-time-display,
- .song audio::-webkit-media-controls-time-remaining-display,
- .song audio::-webkit-media-controls-volume-slider-container {
-     display: flex;
-     align-items: center;
- }
-
- /* Styling for the audio time display */
- .song audio::-webkit-media-controls-current-time-display,
- .song audio::-webkit-media-controls-time-remaining-display {
-     margin: 0 5px;
-     font-size: 12px;
- }
-
- /* Styling for the volume slider */
- .song audio::-webkit-media-controls-volume-slider {
-     margin: 0 5px;
-     width: 60px;
-     background-color: #fff;
-     /* Set the background color of the volume slider to white */
- }
-
- /* Styling for the volume slider thumb */
- .song audio::-webkit-media-controls-volume-slider-thumb {
-     width: 12px;
-     height: 12px;
-     font-size: 8px;
-     line-height: 1;
- }
-
- /* Styling for the audio time display and volume slider in fullscreen mode */
- .song audio:-webkit-full-screen::-webkit-media-controls-current-time-display,
- .song audio:-webkit-full-screen::-webkit-media-controls-time-remaining-display,
- .song audio:-webkit-full-screen::-webkit-media-controls-volume-slider-container {
-     display: none;
-     /* Hide time display and volume slider in fullscreen mode */
- }
-
- /* Styling for the audio controls panel in fullscreen mode */
- .song audio:-webkit-full-screen::-webkit-media-controls-panel {
-     flex-direction: row;
-     /* Display controls horizontally in fullscreen mode */
- }
-
- /* Styling for the audio controls buttons in fullscreen mode */
- .song audio:-webkit-full-screen::-webkit-media-controls-play-button,
- .song audio:-webkit-full-screen::-webkit-media-controls-mute-button {
-     font-size: 20px;
-     /* Increase button size in fullscreen mode */
- }
-
- /* Styling for the audio controls container when audio is not playing */
- .song audio::-webkit-media-controls-start-playback-button {
-     display: none;
-     /* Hide play button when audio is not playing */
- }
-
- /* Hover and active styles for buttons and sliders */
- .song audio::-webkit-media-controls-play-button:hover,
- .song audio::-webkit-media-controls-mute-button:hover,
- .song audio::-webkit-media-controls-timeline-thumb:hover,
- .song audio::-webkit-media-controls-volume-slider-thumb:hover,
- .song audio::-webkit-media-controls-timeline-thumb:active,
- .song audio::-webkit-media-controls-volume-slider-thumb:active {
-     background-color: #2E8B57;
- }
-
- /* Styling for progress bar */
- .song audio::-webkit-media-controls-timeline {
-     background-color: rgba(255, 255, 255, 0.3);
-     /* Progress bar background color (white with opacity) */
-     border-radius: 2.5px;
- }
-
- /* Styling for progress bar thumb */
- .song audio::-webkit-media-controls-timeline-thumb {
-     background-color: #fff;
-     /* Progress bar thumb color (white) */
- }
-
- /* Styling for time display and volume slider */
- .song audio::-webkit-media-controls-current-time-display,
- .song audio::-webkit-media-controls-time-remaining-display,
- .song audio::-webkit-media-controls-volume-slider {
-     height: 10px;
-     line-height: 10px;
-     padding: 0 4px;
-     color: white;
-     /* Time display and volume slider color (white) */
- }
-
- /* Styling for mute button */
- .song audio::-webkit-media-controls-mute-button {
-     padding: 4px;
- }
-
- /* Styling for audio controls container */
- .song audio::-webkit-media-controls-panel {
-     display: flex;
-     align-items: center;
- }
-
- /* Styling for audio controls container in fullscreen mode */
- .song audio:-webkit-full-screen::-webkit-media-controls-panel {
-     flex-direction: column;
- }
-
- /* Styling for the audio controls container when audio is not playing */
- .song audio::-webkit-media-controls-start-playback-button {
-     display: none;
-     /* Hide play button when audio is not playing */
- }
-
- /* Styling for the audio controls container in fullscreen mode */
- .song audio:-webkit-full-screen::-webkit-media-controls-overlay-play-button {
-     display: none;
-     /* Hide overlay play button in fullscreen mode */
- }
-
- /* Media Queries for responsiveness */
- @media (max-width: 600px) {
-
-     /* Make the songs occupy the full width */
-     .song {
-         width: 100%;
-     }
-
-     /* Adjust the audio controls container for smaller screens */
-     .song audio::-webkit-media-controls-panel {
-         flex-direction: column;
-     }
- }
+/* ... (existing styles) ... */
