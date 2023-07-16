@@ -288,25 +288,21 @@ button:hover {
 }
 
 .spotify-button {
-    background-color: #1DB954;
-    /* Spotify green */
+    background-color: #1DB954; /* Spotify green */
 }
 
 .apple-music-button {
-    background-color: #B22222;
-    /* Apple Music red */
+    background-color: #B22222; /* Apple Music red */
 }
 
 .made-by-button {
-    background-color: #444;
-    /* Custom background color for "Made by" button */
+    background-color: #444; /* Custom background color for "Made by" button */
 }
 
 .spotify-button:hover,
 .apple-music-button:hover,
 .made-by-button:hover {
-    background-color: #222;
-    /* Darker color on hover */
+    background-color: #222; /* Darker color on hover */
 }
 
 /* Styling for the "Made by" link */
@@ -314,8 +310,7 @@ button:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: #1E2831;
-    /* Custom background color for the "Made by" link */
+    background-color: #1E2831; /* Custom background color for the "Made by" link */
     padding: 5px;
     border-radius: 5px;
     font-size: 12px;
@@ -393,18 +388,15 @@ button:hover {
 }
 
 .song .spotify-button {
-    background-color: #1DB954;
-    /* Spotify green */
+    background-color: #1DB954; /* Spotify green */
 }
 
 .song .apple-music-button {
-    background-color: #B22222;
-    /* Apple Music red */
+    background-color: #B22222; /* Apple Music red */
 }
 
 .song .made-by-button {
-    background-color: #444;
-    /* Custom background color for "Made by" button */
+    background-color: #444; /* Custom background color for "Made by" button */
 }
 
 .song i {
@@ -456,13 +448,12 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    background-color: #444;
-    /* Custom background color for "Made by" button */
+    background-color: #444; /* Custom background color for "Made by" button */
 }
 
 .made-by-button:hover {
-    background-color: #222;
-    /* Darker color on hover */
+    background-color: #222; /* Darker color on hover */
 }
 
 /* ... (existing styles) ... */
+
